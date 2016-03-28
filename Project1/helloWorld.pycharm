@@ -1,0 +1,10 @@
+def fibinocciSeries (n):
+    if n == 0:
+        return n
+    if n<=2:
+        return 1
+    else:
+        n= n + fibinocciSeries(n-1+n-2)
+        print n
+
+fibinocciSeries(3)
